@@ -1,0 +1,156 @@
+body{
+    text-align: center;
+    font-family:sans-serif;
+    background-color: black;
+     
+}
+#todo-field-title{
+    margin-right: 20%;
+    
+    background: linear-gradient(45deg,red,blue);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+#container{
+    position: relative;
+}
+.fa-clock{
+    background-color: black;
+    color: white;
+    position:absolute;
+    padding: 8px;
+    border-radius: 5px;
+    border-style: none;
+    z-index: 2;
+    right:40%;
+    top:15%;
+}
+#to-do-input-field{
+    background-color: #2E2E2E;
+    border-radius: 5px;
+    border-style: none;
+    padding:15px 150px 15px 8px  ;
+    color: white;
+
+}
+#Add-todo{
+    background-color: black;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    padding: 8px 12px 8px 12px;
+    right:34%;
+    top:15%;
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+    flex:none;
+    align-items: center;
+    margin-top: 30px;
+}
+#date-picker{
+    display: none;
+    background-color: #2E2E2E;
+    border-radius: 5px;
+    border-style: none;
+    padding:15px 15px 15px 8px  ;
+    color:white;
+    margin: 20px auto;
+    
+}
+.toDoTask{
+    display: flex;
+    
+    width: 327px;
+    justify-content: space-between;
+}
+.done-check-box{
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 2rem;
+    border: 0.10rem solid green;
+    border-radius: 1rem;
+    margin-right: 20px;
+    margin-bottom: 20px;
+      
+      
+}
+.done-check-box::before{
+    
+    content: "";
+    width: 1.4rem;
+    height: 1.4rem;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    transform: scale(0);
+    background-color: green;
+      
+      
+}
+.done-check-box:checked{transform: scale(1);}
+
+.left,.right{
+    display: flex;
+    color: antiquewhite;
+    flex: 1;
+    
+}
+.left>:nth-child(2),.right>:first-child{
+    margin-top: 5px;
+   
+    
+}
+.fa-trash-can {
+    color: red;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 3px;
+
+}
+
+
+@media (min-width:1010px) and(max-width:1050px){
+    #todo-field-title{
+        margin-right: 18%;
+    }
+
+    
+} 
+@media (min-width:1050px) and (max-width:1200px) {
+    #todo-field-title{
+        margin-right: 16%;
+    }
+    .fa-clock{
+       
+        right:43%;
+    }
+
+    #Add-todo{
+        right:38%;
+        
+    }
+    
+}
+@media (min-width:1200px) and (max-width:1600px) {
+    #todo-field-title{
+        margin-right: 12%;
+    }
+    .fa-clock{
+       
+        right:45%;
+    }
+
+    #Add-todo{
+        right:40%;
+        
+    }
+    
+} 
+    
