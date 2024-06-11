@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "air-datepicker": "^3.5.1",
+    "browserify-css": "^0.15.0",
     "commonjs": "^0.0.1",
     "esmify": "^2.1.1"
   },

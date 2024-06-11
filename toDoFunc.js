@@ -27,9 +27,9 @@ function openToDoDateField() {
 openToDoDateField();
 function openDatePicker() {
     //opens the date picking window
-    let r = new AirDatepicker('#date-picker', {
+    let datePicker = new AirDatepicker('#date-picker', {
         onSelect(date) {
-            r.hide();
+            datePicker.hide();
             dateInputField.value = date.formattedDate.toString();
         },
         timepicker: true,

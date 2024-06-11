@@ -1,5 +1,5 @@
 import AirDatepicker from "air-datepicker";
-import localEn from "air-datepicker/locale/en"
+import localEn from "air-datepicker/locale/en";
 
 const dateInputField = <HTMLInputElement>document.getElementById("date-picker");
 const toDoInputField = <HTMLInputElement>document.getElementById("to-do-input-field");
@@ -47,9 +47,9 @@ function openDatePicker ():void{
     //opens the date picking window
 
     
-        let r = new AirDatepicker('#date-picker', {
+        let datePicker = new AirDatepicker('#date-picker', {
         onSelect(date){
-            r.hide(); 
+            datePicker.hide(); 
             dateInputField.value = date.formattedDate.toString();
             
             
